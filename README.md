@@ -1,18 +1,15 @@
-## Getting Started
+Algoritmo QuickSort
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+El algoritmo trabaja de la siguiente forma:
 
-## Folder Structure
+1.- Elegir un elemento del conjunto de elementos a ordenar, al que llamaremos pivote.
 
-The workspace contains two folders by default, where:
+2.- Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores. Los elementos iguales al pivote pueden ser colocados tanto a su derecha como a su izquierda, dependiendo de la implementación deseada. En este momento, el pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3.- La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4.- Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5.- Una vez terminado este proceso todos los elementos estarán ordenados.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Fuente: Wikipedia
