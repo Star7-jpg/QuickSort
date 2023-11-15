@@ -1,7 +1,23 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+import files.Files;
+
 public class QuickSort {
 
     public static void main(String[] args) throws Exception {
-        int[] array = {3,1,7,9,6,8,4,2,5};
+        BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
+        String filename;
+        int[] array;
+
+        Files archivo = new Files();
+
+        System.out.println("Escriba el nombre del archivo de datos");
+        filename = bufer.readLine();
+
+        array = archivo.fileToIntArray(filename);
+
+        //int[] array = {3,1,7,9,6,8,4,2,5};
         int pivote = array[array.length/2];  //El pivote es el valor en la posición 4 del arreglo
 
         System.out.println("Izquierda");
