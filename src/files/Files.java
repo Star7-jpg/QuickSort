@@ -201,7 +201,7 @@ public class Files {
     //Imprimir arreglo
     public void printArray(int[] array){
         for(int dato: array){
-            System.out.println(dato);
+            System.out.print(dato + " ");
         }
     }
 }
