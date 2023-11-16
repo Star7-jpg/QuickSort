@@ -197,4 +197,11 @@ public class Files {
             System.out.println("Error al escribir el archivo" + e.toString());
         }
     }
+
+    //Imprimir arreglo
+    public void printArray(int[] array){
+        for(int dato: array){
+            System.out.println(dato);
+        }
+    }
 }
